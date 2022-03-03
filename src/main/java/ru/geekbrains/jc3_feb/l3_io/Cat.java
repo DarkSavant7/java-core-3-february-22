@@ -11,6 +11,8 @@ import java.util.Objects;
 public class Cat extends Animal implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    private transient final String priv = "priv";
+
     @Setter
     private transient String name;
 
